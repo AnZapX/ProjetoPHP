@@ -1,0 +1,16 @@
+div.center-form{
+    background: linear-gradient(#f8e1ff,#1665be);
+    display:block;
+    font-size: 20px;
+    margin: 20px 40% 20px 40%;
+    padding: 50px 20px 50px 20px;
+    border-radius: 30px;
+    font-family: 'Gotu', sans-serif;
+    font-weight: bold;
+}
+div.center-pag{
+    justify-content: center;
+}
+body{
+    justify-content: center;    
+}
