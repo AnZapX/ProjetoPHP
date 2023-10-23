@@ -52,7 +52,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 2rem;
 }
 
@@ -85,6 +85,7 @@ body{
 
 .categoria__titulo {
     text-align: center;
+    
     background-color: lightgray;
     color: black;
     margin: 2rem 0;
@@ -110,7 +111,7 @@ body{
 
 .serie img {
     max-width: 80%;
-    height: auto;
+    height: 80%;
 }
 
 .serie img:hover {
