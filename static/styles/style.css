@@ -1,5 +1,16 @@
+:root {
+    --branco: #f8e1ff;
+    --azul: #1665be;
+}
+
+* {
+    /* CSS Reset */
+    padding: 0;
+    margin: 0;
+}
+
 div.center-form{
-    background: linear-gradient(#f8e1ff,#1665be);
+    background: linear-gradient( var(--branco), var(--azul) );
     display:block;
     font-size: 20px;
     margin: 20px 40% 20px 40%;
@@ -13,4 +24,64 @@ div.center-pag{
 }
 body{
     justify-content: center;    
+}
+
+.cabecalho {
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+
+}
+
+.cabecalho__logo {
+    align-items: center;
+    display: flex;
+    margin: 2rem;
+}
+
+.cabecalho__apr {
+    align-items: center;
+    color: var(--branco);
+    display: flex;
+    margin: 2rem;
+}
+
+.cabecalho__links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+.cabecalho__links-item {
+    background-color: var(--branco);
+    border-radius: 1.875rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.cabecalho__links a:hover {
+    background-color: gray;
+    color: var(--branco);
+}
+
+.container {
+    height: 100vh;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul);
+    height: 20vh;
+}
+
+.rodape__logo {
+    align-items: center;
+    display: flex;
+    margin-left: 2em;
 }

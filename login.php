@@ -10,9 +10,11 @@
 		$_SESSION['usuario'] = $usuario; // atribui para a sessão "usuario" o nome de usuário digitado, para simples identificação.
 		$_SESSION['erro'] = "";//deixa a session "erro" vazia para não tratar erros.
 		
+		header("Location: index.php");
 	}
 	else{
 		$_SESSION['erro'] = "USUARIO OU SENHA INCORRETA!"; // se os dados estiverem incorretos, grava uma mensagem de erro na session "erro".
+		header("Location: login_form.php");//redireciona para home.php
 	}
-	header("Location: index.php");//redireciona para home.php
+	
 ?>
