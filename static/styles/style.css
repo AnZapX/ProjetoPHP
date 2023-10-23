@@ -1,5 +1,16 @@
+:root {
+    --branco: #f8e1ff;
+    --azul: #1665be;
+}
+
+* {
+    /* CSS Reset */
+    padding: 0;
+    margin: 0;
+}
+
 div.center-form{
-    background: linear-gradient(#f8e1ff,#1665be);
+    background: linear-gradient( var(--branco), var(--azul) );
     display:block;
     font-size: 20px;
     margin: 20px 40% 20px 40%;
@@ -13,4 +24,109 @@ div.center-pag{
 }
 body{
     justify-content: center;    
+}
+
+.cabecalho {
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+
+}
+
+.cabecalho__logo {
+    align-items: center;
+    display: flex;
+    margin: 2rem;
+}
+
+.cabecalho__apr {
+    align-items: center;
+    color: var(--branco);
+    display: flex;
+    margin: 2rem;
+}
+
+.cabecalho__links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+.cabecalho__links-item {
+    background-color: var(--branco);
+    border-radius: 1.875rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.cabecalho__links a:hover {
+    background-color: gray;
+    color: var(--branco);
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria__titulo {
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    margin: 2rem 0;
+    padding: 1.5rem;
+}
+
+.series {
+    margin: 1rem 0 0.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.serie {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.serie img {
+    max-width: 80%;
+    height: auto;
+}
+
+.serie img:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul);
+    height: 20vh;
+}
+
+.rodape__logo {
+    align-items: center;
+    display: flex;
+    margin-left: 2em;
 }
