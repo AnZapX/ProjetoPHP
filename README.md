@@ -1,4 +1,4 @@
-AQUI ESTÁ A DESCRIÇÃO DA ATIVIDADE!
+AQUI ESTÁ A DESCRIÇÃO DA ATIVIDADE
 
 O tema do projeto deve satisfazer um dos assuntos:
 
