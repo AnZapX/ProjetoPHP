@@ -70,7 +70,52 @@ body{
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria__titulo {
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    margin: 2rem 0;
+    padding: 1.5rem;
+}
+
+.series {
+    margin: 1rem 0 0.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.serie {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.serie img {
+    max-width: 80%;
+    height: auto;
+}
+
+.serie img:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);
 }
 
 .rodape {
