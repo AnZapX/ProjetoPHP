@@ -12,6 +12,9 @@
 			<section class="login__container__titulo">
 				<h1>Melhores Séries Aqui</h1>
 			</section>
+			<section>
+
+			</section>
 			
 			<section class="login__container__form">
 				<?php
@@ -24,20 +27,22 @@
 									
 						}
 					?>
-					<div>
-						<form class="login-form" action="login.php" method="post">
-							<div class="login-form_campos">
-								<label for="usuario">Usuário:</label>
-								<input type="text" name="usuario">
+					<div style="height:80%;">
+						<form class="login" action="login.php" method="post">
+							<div class="login-form">
+								<div class="login-form__campos">
+									<label for="usuario">Usuário:</label>
+									<label for="senha">Senha:  </label>
+									<span></span>
+								</div>
+								<div class="login-form__campos">
+									<input type="text" name="usuario">
+									<input type="password" name="senha">
+								</div>
+						
 							</div>
-							<div class="login-form_campos">
-								<label for="senha">Senha:  </label>
-								<input type="password" name="senha">
-							</div>
-							<div class="login-form_campos">
-								<input type="submit" value="Enviar">
-							</div>
-							
+							<input style="height: 2rem;" type="submit" value="Enviar">
+
 						</form>
 					</div>	
 						
