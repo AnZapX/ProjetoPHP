@@ -1,12 +1,55 @@
 :root {
-    --branco: #f8e1ff;
-    --azul: #1665be;
+    --branco: #e4f9f5;
+    --azul: #0d7377;
+    --preto: #212121;
 }
 
 * {
     /* CSS Reset */
     padding: 0;
     margin: 0;
+}
+
+.login__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__container__titulo {
+    color: var(--branco);
+    width: 66vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.login__container__form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco) !important;
+    height: 100vh;
+    width: 33vw;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.login-form_campos {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 70%;
 }
 
 div.center-form{
@@ -23,6 +66,7 @@ div.center-pag{
     justify-content: center;
 }
 body{
+    background-color: var(--azul);
     justify-content: center;    
 }
 
