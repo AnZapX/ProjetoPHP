@@ -18,7 +18,7 @@
         // Redireciona para o login caso não esteja logado
         if(!isset($_SESSION['logado']))
         {
-            header("Location: index.php");
+            header("Location: login_form.php");
         }
         else
         {
