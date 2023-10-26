@@ -85,10 +85,12 @@ div.center-pag{
 body{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;  
+    background: #0174BE;
+    color: var(--branco);
 }
 
 .cabecalho {
-    background-color: var(--azul);
+    background-color: var(--preto);
     display: flex;
     flex-direction: row;
     height: 10vh;
@@ -119,7 +121,7 @@ body{
 
 .cabecalho__links-item {
     background-color: var(--branco);
-    border-radius: 1.875rem;
+    border-radius: 0.3125rem;
     color: black;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -132,6 +134,7 @@ body{
 
 .container {
     min-height: 100vh;
+    margin: 5rem;
 }
 
 .categorias {
@@ -146,19 +149,21 @@ body{
 
 .categoria__titulo {
     text-align: center;
-    
-    background-color: lightgray;
-    color: black;
+    border-radius: 0.3125rem;
+    color: var(--branco);
     margin: 2rem 0;
     padding: 1.5rem;
+    background: rgba(0,0,0,0.7);
 }
 
 .series {
-    margin: 1rem 0 0.5rem 2rem;
+    background: ;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
+    background: rgba(0,0,0, 0.5);
+    border-radius: 0.3125rem;
 }
 
 .serie {
@@ -183,7 +188,7 @@ body{
 .rodape {
     display: flex;
     justify-content: space-between;
-    background-color: var(--azul);
+    background-color: var(--preto);
     height: 20vh;
 }
 
@@ -191,4 +196,17 @@ body{
     align-items: center;
     display: flex;
     margin-left: 2em;
+}
+
+.rodape__feito {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
 }

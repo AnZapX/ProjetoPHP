@@ -25,20 +25,9 @@
     ?>
 
         <body>
-            <header class="cabecalho">
-
-                <div class="cabecalho__logo">
-                    <img src="https://dummyimage.com/150x50/fff/aaa" alt="Logo da UnicidSeries">
-                </div>
-                <div class="cabecalho__apr">
-                    <span>Olá, <?php echo $_SESSION['usuario'] ?></span>
-                </div>
-                <div class="cabecalho__links">
-                    <a class="cabecalho__links-item" href="#">Contato</a>
-                    <a class="cabecalho__links-item" href="logout.php">Sair</a>
-                </div>
-                
-            </header>
+            <?php
+                include_once("./static/html/cabecalho.html");
+            ?>
 
             <main class="container">
                 <section class="categorias">
@@ -92,13 +81,9 @@
                 </section>
             </main>
 
-            <footer class="rodape">
-                <div class="rodape__logo">
-                    <img src="https://dummyimage.com/150x100/fff/aaa" alt="Logo da UnicidSeries">
-                </div>
-                <div></div>
-                <div></div>
-            </footer>
+            <?php
+                include_once("./static/html/rodape.html");
+            ?>
         </body>
 
     <?php
