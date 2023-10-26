@@ -42,7 +42,7 @@
 						
 							</div>
 							<input style="height: 2rem;" type="submit" value="Enviar">
-
+							<span><a href="cadastro_form.php" style="font-size:0.8rem;">Clique aqui para cadastrar</a></span>
 						</form>
 					</div>	
 						
