@@ -156,8 +156,8 @@ body{
     background: rgba(0,0,0,0.7);
 }
 
+
 .series {
-    background: ;
     display: flex;
     flex-direction: row;
     gap: 2rem;

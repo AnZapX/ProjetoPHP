@@ -9,25 +9,11 @@
         <title>UnicidSeries</title>
     </head>
 
-    <?php
-        session_start();
-    
-        $se_terror = ["Missa da Meia Noite", "A Maldição da Residência Hill"];
-        $se_romanc = ["heartstopper"];
-
-        // Redireciona para o login caso não esteja logado
-        if(!isset($_SESSION['logado']))
-        {
-            header("Location: login_form.php");
-        }
-        else
-        {
-    ?>
+    <?php require_once("./static/php/config.php"); ?>
 
         <body>
-            <?php
-                include_once("./static/html/cabecalho.html");
-            ?>
+            
+            <?php include_once("./static/html/cabecalho.html"); ?>
 
             <main class="container">
                 <section class="categorias">
@@ -85,8 +71,4 @@
                 include_once("./static/html/rodape.html");
             ?>
         </body>
-
-    <?php
-        }
-    ?>
 </html>
