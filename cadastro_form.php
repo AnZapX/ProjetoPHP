@@ -18,18 +18,22 @@
 			
 			<section class="login__container__form">
 				<?php
-					session_start();// identifica que a página trabalhará com SESSIONS
-					if(!isset($_SESSION['logado'])){ //verifica se a session "logado" possui algum valor. Ela controla se o login foi realizado.
-						if(isset($_SESSION['erro']) && $_SESSION['erro'] != ""){ // verifica se há algum erro configurado
-							//se há erro configurado, mostra o erro.
+					session_start();
+					if(!isset($_SESSION['logado'])){ 
+						if(isset($_SESSION['erro']) && $_SESSION['erro'] != ""){
 							echo "<span style='color:red;'>". 
 									$_SESSION["erro"] . "</span><br/>";
 									
 						}
 					?>
 					<div style="height:80%;">
-						<h1>Login</h1>
-						<form class="login" action="login.php" method="post">
+                        <h1>Cadastro</h1>
+                        <?php
+                            if(isset($_SESSION['cadastrado']) && $_SESSION['cadastrado'] != ""){
+                                echo "<span style='color:red;'>Já existe um usuário com esta conta</span><br/>";
+                            }
+                        ?>
+						<form class="login" action="cadastro.php" method="post">
 							<div class="login-form">
 								<div class="login-form__campos">
 									<label style="color: black;" for="usuario">Usuário:</label>
@@ -43,7 +47,7 @@
 						
 							</div>
 							<input style="height: 2rem;" type="submit" value="Enviar">
-							<span><a href="cadastro_form.php" style="font-size:0.8rem;">Clique aqui para cadastrar</a></span>
+							<span><a href="login_form.php" style="font-size:0.8rem;">Já tenho uma conta</a></span>
 						</form>
 					</div>	
 						
