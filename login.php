@@ -1,11 +1,15 @@
 <?php
-	session_start();// identifica que a página trabalhará com SESSIONS
-	//leitura das variáveis
+	session_start();
+	require_once('conexao.php');
+
 	$usuario = $_POST['usuario']; 
 	$senha = $_POST['senha'];
-	//verificação de senha "correta"
-	//fiz um ajuste para 3 iguais === com o intuito de transformar a comparação em case sensitive também.
-	if($usuario === "zap" && $senha==="seg"){
+
+	$sql = "SELECT id FROM usuario WHERE login = '$usuario' AND senha = '$senha'";
+	$result = mysqli_query($conn, $sql);
+
+	if ($result && mysqli_num_rows($result) > 0)
+	{
 		$_SESSION['logado'] = 's'; //atribui para a sessão "logado" o valor 's'. Ela controlará se o "login" foi realizado.
 		$_SESSION['usuario'] = $usuario; // atribui para a sessão "usuario" o nome de usuário digitado, para simples identificação.
 		$_SESSION['erro'] = "";//deixa a session "erro" vazia para não tratar erros.
@@ -16,5 +20,6 @@
 		$_SESSION['erro'] = "USUARIO OU SENHA INCORRETA!"; // se os dados estiverem incorretos, grava uma mensagem de erro na session "erro".
 		header("Location: login_form.php");//redireciona para home.php
 	}
-	
+
+	mysqli_close($conn);
 ?>
