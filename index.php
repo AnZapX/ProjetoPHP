@@ -62,6 +62,63 @@
                         
                     </div>
 
+                    <div class="categoria">
+                        <div class="categoria__titulo">
+                            <h2>Ação</h2>
+                        </div>
+
+                        <div class="series">
+                            <?php
+                                foreach ($se_romanc as $serie) {
+                                    echo "<div class='serie'>";
+                                        echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
+                                        echo "<span>$serie</span> ";
+                                    echo "</div>";
+                                    
+                                }
+                            ?>
+                        </div>
+                        
+                    </div>
+
+                    <div class="categoria">
+                        <div class="categoria__titulo">
+                            <h2>Comédia</h2>
+                        </div>
+
+                        <div class="series">
+                            <?php
+                                foreach ($se_romanc as $serie) {
+                                    echo "<div class='serie'>";
+                                        echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
+                                        echo "<span>$serie</span> ";
+                                    echo "</div>";
+                                    
+                                }
+                            ?>
+                        </div>
+                        
+                    </div>
+
+                    <div class="categoria">
+                        <div class="categoria__titulo">
+                            <h2>Mistério</h2>
+                        </div>
+
+                        <div class="series">
+                            <?php
+                                foreach ($se_romanc as $serie) {
+                                    echo "<div class='serie'>";
+                                        echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
+                                        echo "<span>$serie</span> ";
+                                    echo "</div>";
+                                    
+                                }
+                            ?>
+                        </div>
+                        
+                    </div>
+
 
                 
                 </section>
