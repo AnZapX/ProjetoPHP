@@ -28,7 +28,7 @@
                         <?php
                             foreach ($se_vitor as $serie) {
                                 echo "<div class='serie'>";
-                                    echo "<img src='./static/img/imgfav/$serie.jpeg' alt='Capa da série $serie'>";
+                                    echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                     echo "<span>$serie</span> ";
                                 echo "</div>";
                                 
@@ -47,7 +47,7 @@
                         <?php
                             foreach ($se_Andreas as $serie) {
                                 echo "<div class='serie'>";
-                                    echo "<img src='./static/img/imgfav/$serie.jpeg' alt='Capa da série $serie'>";
+                                    echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                     echo "<span>$serie</span> ";
                                 echo "</div>";
                                 
@@ -66,7 +66,7 @@
                         <?php
                             foreach ($se_Gabriel as $serie) {
                                 echo "<div class='serie'>";
-                                    echo "<img src='./static/img/imgfav/$serie.jpeg' alt='Capa da série $serie'>";
+                                    echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                     echo "<span>$serie</span> ";
                                 echo "</div>";
                                 
@@ -85,7 +85,7 @@
                         <?php
                             foreach ($se_Pedro as $serie) {
                                 echo "<div class='serie'>";
-                                    echo "<img src='./static/img/imgfav/$serie.jpeg' alt='Capa da série $serie'>";
+                                    echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                     echo "<span>$serie</span> ";
                                 echo "</div>";
                                 
