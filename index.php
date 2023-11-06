@@ -69,7 +69,7 @@
 
                         <div class="series">
                             <?php
-                                foreach ($se_romanc as $serie) {
+                                foreach ($se_acao as $serie) {
                                     echo "<div class='serie'>";
                                         echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                         echo "<span>$serie</span> ";
@@ -88,7 +88,7 @@
 
                         <div class="series">
                             <?php
-                                foreach ($se_romanc as $serie) {
+                                foreach ($se_comedia as $serie) {
                                     echo "<div class='serie'>";
                                         echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                         echo "<span>$serie</span> ";
@@ -107,7 +107,7 @@
 
                         <div class="series">
                             <?php
-                                foreach ($se_romanc as $serie) {
+                                foreach ($se_misterio as $serie) {
                                     echo "<div class='serie'>";
                                         echo "<img src='./static/img/$serie.jpeg' alt='Capa da série $serie'>";
                                         echo "<span>$serie</span> ";

@@ -22,12 +22,19 @@
             $nome = $_POST['nome'];
             $email = $_POST['email'];
             $contato = $_POST['contato'];
-
-            echo "Obrigado $nome do E-mail: $email<br/>";
-            echo "Aqui está seu contato: <br/>";
-            echo "$contato";
-
             ?>
+
+            <div class="centro">
+            <form action="contato.php">
+                <h1>Obrigado <?php echo "$nome" ?></h1> <br>
+                <h1>E-mail: <?php echo"$email" ?></h1> <br>
+                <h1>Aqui está seu contato:</h1> <br>
+                <textarea value="" name="" rows="10" cols="45" wrap maxlength="500" disabled> <?php echo "$contato"?> </textarea> <br>
+                <input style="height: 3rem; width: 5rem" type="submit" value="Reenviar">
+            </form>
+
+            </div>
+
         </section>
         </main>
         <?php
