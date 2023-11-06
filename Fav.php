@@ -6,7 +6,7 @@
 
         <link rel="stylesheet" href="./static/styles/style.css">
 
-        <title>UnicidSeries</title>
+        <title>Favoritos</title>
     </head>
 
     <?php require_once("./static/php/configfav.php"); ?>

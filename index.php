@@ -18,10 +18,10 @@
             <main class="container">
                 <section class="categorias">
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Foi proposto uma atividade em grupo de 3 a 4 pessoas pelo nosso professor da matéria Desenvolvimento Web.
+                    Mostraremos algumas séries de alguns gêneros entre eles terror, romance, ação, comédia e mistério.
+                    No menu na parte superior direito temos uma página onde mostraremos 5 séries favoritas de cada integrante e também 
+                    temos a página contato caso queira mandar uma mensagem, além da página mostrando o que cada integrante fez no projeto.
                     </p>
                     
                     <div class="categoria">

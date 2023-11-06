@@ -10,7 +10,7 @@
 
 		<main class="login__container">
 			<section class="login__container__titulo">
-				<h1>Melhores Séries Aqui</h1>
+				<h1>Login</h1>
 			</section>
 			<section>
 
