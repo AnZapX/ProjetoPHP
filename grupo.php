@@ -63,11 +63,16 @@
 
                 <div class="categoria">
                     <div class="categoria__titulo">
-                        <h2>Session</h2>
+                        <h2>Lógica</h2>
                     </div>
 
                     <div class="series">
-                    O session foi usado no login, no registro e no cabeçalho. Basicamente o session armazena o login do usuário pra não precisar fazer login toda hora e só deixa acessar o index se tiver logado e também para exibir o nome do usuário no cabeçalho
+                    <p>
+                       O session foi usado no login, no registro e no cabeçalho. Basicamente o session armazena o login do usuário pra não precisar fazer login toda hora e só deixa acessar o index se tiver logado e também para exibir o nome do usuário no cabeçalho. 
+                    </p>
+                    <p>
+                        Usamos no PHP as funções include e require para o cabeçalho e validação, além de outras funcionalidades aprendidas em aula como if também na validação e foreach para exibir as imagens da melhor forma.
+                    </p>
                     </div>
                     
                 </div>
