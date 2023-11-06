@@ -1,0 +1,8 @@
+create database projetophp;
+use `projetophp`;
+CREATE TABLE `usuario` (
+  `id` int primary key NOT NULL AUTO_INCREMENT,
+  `login` varchar(30) NOT NULL,
+  `senha` varchar(30) NOT NULL
+);
+  
