@@ -36,3 +36,11 @@ A fonte da informação, imagem, tabela etc. Deverá ser especificada, em destaq
 A criatividade, dedicação e estrutura serão critérios de avaliação.
 A pasta do projeto deverá ser compactada em um arquivo .zip e nomeado como “projeto_turma_integrante01-integrante02.zip
 Todos os membros do grupo deverão enviar o projeto criado.
+create database projetophp;
+
+use `projetophp`;
+CREATE TABLE `usuario` (
+  `id` int primary key NOT NULL AUTO_INCREMENT,
+  `login` varchar(30) NOT NULL,
+  `senha` varchar(30) NOT NULL
+);
